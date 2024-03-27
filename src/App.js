@@ -176,29 +176,29 @@ function App() {
       id:'01',
       className: 'Class S',
       isActive: true,
-      activeIcon: '/images/Class v.2.png',
-      inActiveIcon: '/images/Class v.2 (4).png'
+      activeIcon: '/frontend-test/images/Class v.2.png',
+      inActiveIcon: '/frontend-test/images/Class v.2 (4).png'
     },
     {
       id:'02',
       className: 'Class A',
       isActive: false,
-      activeIcon: '/images/Class v.2 (1).png',
-      inActiveIcon: '/images/Class v.2 (5).png'
+      activeIcon: '/frontend-test/images/Class v.2 (1).png',
+      inActiveIcon: '/frontend-test/images/Class v.2 (5).png'
     },
     {
       id:'03',
       className: 'Class B',
       isActive: false,
-      activeIcon: '/images/Class v.2 (2).png',
-      inActiveIcon: '/images/Class v.2 (6).png'
+      activeIcon: '/frontend-test/images/Class v.2 (2).png',
+      inActiveIcon: '/frontend-test/images/Class v.2 (6).png'
     },
     {
       id:'04',
       className: 'Class C',
       isActive: false,
-      activeIcon: '/images/Class v.2 (3).png',
-      inActiveIcon: '/images/Class v.2 (7).png'
+      activeIcon: '/frontend-test/images/Class v.2 (3).png',
+      inActiveIcon: '/frontend-test/images/Class v.2 (7).png'
     },
   ]
 
@@ -221,17 +221,17 @@ function App() {
   return (
     <div className="App">
       <div className='bg'>
-        <Sportlight src={`${config}/images/sportlight.png`}/>
+        <Sportlight src={'/frontend-test/images/sportlight.png'}/>
         <ContentWrapper>
             <Section1>
-              <WoodTitle src={`${config}/images/Wood-Title-Sign.png`}/>
+              <WoodTitle src={'/frontend-test/images/Wood-Title-Sign.png'}/>
               <WoodTitleText>คริตเตอร์</WoodTitleText>
             </Section1>
             <Section2>
               {classData.map((item, index)=>(
                 <ButtonBox active ={item.isActive}>
                   <ClassContainer active ={item.isActive} onClick={()=>onSelectClass(item, index)}>
-                    <ClassImg src={item.isActive ? `${config}/item.activeIcon`: `${config}/item.inActiveIcon`}  width={'25'}></ClassImg>
+                    <ClassImg src={item.isActive ? "/frontend-test/item.activeIcon": "/frontend-test/item.inActiveIcon"}  width={'25'}></ClassImg>
                     <ClassName>{item.className}</ClassName>
                   </ClassContainer>
                   </ButtonBox>
@@ -240,12 +240,12 @@ function App() {
 
             </Section2>
             <Section3>
-              <Critter src={config+critterDisplay.imageUrl}/>
+              <Critter src={critterDisplay.imageUrl}/>
               <CritterDetail>
                 <ContentContainer>
-                  <ClassImg src={config+classDisplay}></ClassImg><CharactorName>{critterDisplay.critterName}</CharactorName>
+                  <ClassImg src={classDisplay}></ClassImg><CharactorName>{critterDisplay.critterName}</CharactorName>
                 </ContentContainer>
-                <Vector><VectorImg src={`${config}/images/wreath.png`} />  สายเพิ่มรางวัล</Vector>
+                <Vector><VectorImg src={`/frontend-test/images/wreath.png`} />  สายเพิ่มรางวัล</Vector>
                 <Detail dangerouslySetInnerHTML={{ __html: critterDisplay.description.replace(/(?:\r\n|\r|\n)/g, "<br>") }} />
               </CritterDetail>
             </Section3>

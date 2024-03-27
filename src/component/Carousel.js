@@ -123,12 +123,12 @@ function Carousel(props) {
         index === selectIndex ? (
           <ActiveCard key={index} onClick={() => handleClickSlide(item, index)}>
             {/* <ActiveCard src={"/images/active.png"}/> */}
-            <ActiveItem src={'/frontend-test'+item.imageUrl} />
+            <ActiveItem src={item.imageUrl} />
           </ActiveCard>
         ) : (
           <InActiveCard key={index} onClick={() => handleClickSlide(item, index)}>
             {/* <InActiveCard src={"/images/normal.png"}/> */}
-            <InActiveItem src={'/frontend-test'+item.imageUrl} />
+            <InActiveItem src={item.imageUrl} />
           </InActiveCard>
         )
       ))}
