@@ -231,7 +231,7 @@ function App() {
               {classData.map((item, index)=>(
                 <ButtonBox active ={item.isActive}>
                   <ClassContainer active ={item.isActive} onClick={()=>onSelectClass(item, index)}>
-                    <ClassImg src={item.isActive ? "/frontend-test/item.activeIcon": "/frontend-test/item.inActiveIcon"}  width={'25'}></ClassImg>
+                    <ClassImg src={item.isActive ? item.activeIcon : item.inActiveIcon} width={'25'}></ClassImg>
                     <ClassName>{item.className}</ClassName>
                   </ClassContainer>
                   </ButtonBox>
