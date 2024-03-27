@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/frontend-test/static/css/main.81f7fc0a.chunk.css",
+    "main.js": "/frontend-test/static/js/main.bc47bda4.chunk.js",
+    "main.js.map": "/frontend-test/static/js/main.bc47bda4.chunk.js.map",
+    "runtime-main.js": "/frontend-test/static/js/runtime-main.b172cde2.js",
+    "runtime-main.js.map": "/frontend-test/static/js/runtime-main.b172cde2.js.map",
+    "static/css/2.1b628815.chunk.css": "/frontend-test/static/css/2.1b628815.chunk.css",
+    "static/js/2.8e05258d.chunk.js": "/frontend-test/static/js/2.8e05258d.chunk.js",
+    "static/js/2.8e05258d.chunk.js.map": "/frontend-test/static/js/2.8e05258d.chunk.js.map",
+    "static/js/3.94725786.chunk.js": "/frontend-test/static/js/3.94725786.chunk.js",
+    "static/js/3.94725786.chunk.js.map": "/frontend-test/static/js/3.94725786.chunk.js.map",
+    "index.html": "/frontend-test/index.html",
+    "static/css/2.1b628815.chunk.css.map": "/frontend-test/static/css/2.1b628815.chunk.css.map",
+    "static/css/main.81f7fc0a.chunk.css.map": "/frontend-test/static/css/main.81f7fc0a.chunk.css.map",
+    "static/js/2.8e05258d.chunk.js.LICENSE.txt": "/frontend-test/static/js/2.8e05258d.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/frontend-test/static/media/BG-section4.9fbec148.png",
+    "static/media/slick-theme.css": "/frontend-test/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b172cde2.js",
+    "static/css/2.1b628815.chunk.css",
+    "static/js/2.8e05258d.chunk.js",
+    "static/css/main.81f7fc0a.chunk.css",
+    "static/js/main.bc47bda4.chunk.js"
+  ]
+}
