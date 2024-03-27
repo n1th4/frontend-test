@@ -77,7 +77,7 @@ function Carousel(props) {
 
   const settings = {
     // dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 5,
     arrows: true,
@@ -90,8 +90,7 @@ function Carousel(props) {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true
+          // dots: true
         }
       },
       {
@@ -124,12 +123,12 @@ function Carousel(props) {
         index === selectIndex ? (
           <ActiveCard key={index} onClick={() => handleClickSlide(item, index)}>
             {/* <ActiveCard src={"/images/active.png"}/> */}
-            <ActiveItem src={item.imageUrl} />
+            <ActiveItem src={'/frontend-test'+item.imageUrl} />
           </ActiveCard>
         ) : (
           <InActiveCard key={index} onClick={() => handleClickSlide(item, index)}>
             {/* <InActiveCard src={"/images/normal.png"}/> */}
-            <InActiveItem src={item.imageUrl} />
+            <InActiveItem src={'/frontend-test'+item.imageUrl} />
           </InActiveCard>
         )
       ))}

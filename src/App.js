@@ -231,7 +231,7 @@ function App() {
               {classData.map((item, index)=>(
                 <ButtonBox active ={item.isActive}>
                   <ClassContainer active ={item.isActive} onClick={()=>onSelectClass(item, index)}>
-                    <ClassImg src={item.isActive ? item.activeIcon: item.inActiveIcon}  width={'25'}></ClassImg>
+                    <ClassImg src={item.isActive ? `${config}/item.activeIcon`: `${config}/item.inActiveIcon`}  width={'25'}></ClassImg>
                     <ClassName>{item.className}</ClassName>
                   </ClassContainer>
                   </ButtonBox>
@@ -240,10 +240,10 @@ function App() {
 
             </Section2>
             <Section3>
-              <Critter src={critterDisplay.imageUrl}/>
+              <Critter src={config+critterDisplay.imageUrl}/>
               <CritterDetail>
                 <ContentContainer>
-                  <ClassImg src={classDisplay}></ClassImg><CharactorName>{critterDisplay.critterName}</CharactorName>
+                  <ClassImg src={config+classDisplay}></ClassImg><CharactorName>{critterDisplay.critterName}</CharactorName>
                 </ContentContainer>
                 <Vector><VectorImg src={`${config}/images/wreath.png`} />  สายเพิ่มรางวัล</Vector>
                 <Detail dangerouslySetInnerHTML={{ __html: critterDisplay.description.replace(/(?:\r\n|\r|\n)/g, "<br>") }} />
