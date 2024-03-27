@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import styled from "styled-components";
 
-
 const SlideWrapper = styled.div`
   // padding-top: 50rem;
   width: 30%;
@@ -16,7 +15,7 @@ const SliderStyled = styled(Slider)`
 `;
 
 const ActiveCard = styled.div`;
-  background: url("/images/active.png");
+  background: url("/frontend-test/images/active.png");
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 5px;
@@ -25,7 +24,7 @@ const ActiveCard = styled.div`;
 `;
 
 const InActiveCard = styled.div`
-  background: url("/images/normal.png");
+  background: url("/frontend-test/images/normal.png");
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 24px;
@@ -52,7 +51,7 @@ function NextArrowButton(props) {
   const { className, style, onClick } = props;
   return (
     <img
-      src="/images/NextArrow.png"
+      src="/frontend-test/images/NextArrow.png"
       className={className}
       style={{ ...style, display: "block",right: '-40px' }}
       onClick={onClick}
@@ -64,7 +63,7 @@ function PrevArrowButton(props) {
   const { className, style, onClick } = props;
   return (
     <img
-      src="/images/PrevArrow.png"
+      src="/frontend-test/images/PrevArrow.png"
       className={className}
       style={{ ...style, display: "block", left: "-40px" }}
       onClick={onClick}

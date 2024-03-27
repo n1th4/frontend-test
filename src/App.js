@@ -8,6 +8,7 @@ import critterData from "./data/critter";
 import { useState } from 'react';
 
 
+const config = "/frontend-test"
 
 const Sportlight = styled.img`
   width: 35%;
@@ -220,10 +221,10 @@ function App() {
   return (
     <div className="App">
       <div className='bg'>
-        <Sportlight src={"/images/sportlight.png"}/>
+        <Sportlight src={`${config}/images/sportlight.png`}/>
         <ContentWrapper>
             <Section1>
-              <WoodTitle src={"/images/Wood-Title-Sign.png"}/>
+              <WoodTitle src={`${config}/images/Wood-Title-Sign.png`}/>
               <WoodTitleText>คริตเตอร์</WoodTitleText>
             </Section1>
             <Section2>
@@ -244,7 +245,7 @@ function App() {
                 <ContentContainer>
                   <ClassImg src={classDisplay}></ClassImg><CharactorName>{critterDisplay.critterName}</CharactorName>
                 </ContentContainer>
-                <Vector><VectorImg src="/images/wreath.png"></VectorImg>สายเพิ่มรางวัล</Vector>
+                <Vector><VectorImg src={`${config}/images/wreath.png`} />  สายเพิ่มรางวัล</Vector>
                 <Detail dangerouslySetInnerHTML={{ __html: critterDisplay.description.replace(/(?:\r\n|\r|\n)/g, "<br>") }} />
               </CritterDetail>
             </Section3>
